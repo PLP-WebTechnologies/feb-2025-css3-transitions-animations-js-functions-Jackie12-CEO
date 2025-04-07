@@ -1,0 +1,42 @@
+/* CSS Animation */
+@keyframes buttonHover {
+    0% {
+      background-color: blue;
+      transform: scale(1);
+    }
+    50% {
+      background-color: green;
+      transform: scale(1.2);
+    }
+    100% {
+      background-color: blue;
+      transform: scale(1);
+    }
+  }
+  
+  /* Button Styles */
+  button {
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid #000;
+    border-radius: 8px;
+    background-color: blue;
+    color: white;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+  }
+  
+  /* Hover animation */
+  button:hover {
+    animation: buttonHover 0.6s ease-in-out;
+  }
+  
+  /* Style for the second button */
+  #toggleButton {
+    background-color: gray;
+    border-color: black;
+    margin-top: 20px;
+  }
+  
+  
